@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Proximity Chat
+Adds proximity chat to runelite
