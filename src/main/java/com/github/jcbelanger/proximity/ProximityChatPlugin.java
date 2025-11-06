@@ -73,9 +73,9 @@ public class ProximityChatPlugin extends Plugin
 			lm.fAvatarPosition[1] = loc.getY();
 			lm.fAvatarPosition[2] = loc.getPlane();
 
-//			lm.fCameraPosition[0] = client.getCameraX();
-//			lm.fCameraPosition[1] = client.getCameraY();
-//			lm.fCameraPosition[2] = client.getCameraZ();
+			lm.fCameraPosition[0] = lm.fAvatarPosition[0];
+			lm.fCameraPosition[1] = lm.fAvatarPosition[1];
+			lm.fCameraPosition[2] = lm.fAvatarPosition[2];
 //
 //			lm.fCameraFront[0] = (float) client.getCameraFpX();
 //			lm.fCameraFront[1] = (float) client.getCameraFpY();
