@@ -17,6 +17,10 @@ def runeLiteVersion = 'latest.release'
 def pluginMainClass = 'com.github.jcbelanger.proximity.ProximityChatPluginTest'
 
 dependencies {
+	// Add JNA and its platform utilities for native loading
+	implementation 'net.java.dev.jna:jna:5.14.0'
+	implementation 'net.java.dev.jna:jna-platform:5.14.0'
+
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
 
 	compileOnly 'org.projectlombok:lombok:1.18.30'
@@ -40,6 +44,8 @@ tasks.register('run', JavaExec) {
 
 	jvmArgs "-ea"
 	args "--developer-mode", "--debug"
+
+//	systemProperty "java.library.path", file("src/main/resources/discord_social_sdk/bin/release").absolutePath
 }
 
 tasks.register('shadowJar', Jar) {
