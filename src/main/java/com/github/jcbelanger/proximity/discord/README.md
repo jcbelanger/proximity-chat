@@ -36,7 +36,7 @@ lib.Discord_Client_Init(client);
 
 The library loading is automatic on first use — it will:
 1. Try to load `discord_partner_sdk` from the system library path
-2. If not found, extract and load from the bundled resources in `src/main/resources/discord_social_sdk/lib/release/`
+2. If not found, extract and load from the bundled resources in `src/main/resources/`
 
 ### Type Mappings
 
