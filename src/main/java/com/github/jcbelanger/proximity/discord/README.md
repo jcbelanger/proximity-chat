@@ -16,7 +16,7 @@ The `DiscordSocialSDK.java` file provides complete Java-to-C interop for the Dis
 The Discord Social SDK native library (`discord_partner_sdk`) is automatically loaded when `DiscordSocialSDK` is first accessed:
 
 1. **First attempt**: Tries to load from system library path (if Discord Social SDK is installed system-wide)
-2. **Fallback**: If not found, automatically extracts and loads from `src/main/resources/discord_social_sdk/lib/release/`
+2. **Fallback**: If not found, automatically extracts and loads from `src/main/resources/`
 3. **Platform support**: Automatically detects and loads the correct library for Windows, macOS, and Linux
 
 **You don't need to do anything special** — just use `DiscordSocialSDK.getInstance()` and the library loading is handled automatically.

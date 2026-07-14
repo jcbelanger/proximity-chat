@@ -44,8 +44,6 @@ tasks.register('run', JavaExec) {
 
 	jvmArgs "-ea"
 	args "--developer-mode", "--debug"
-
-//	systemProperty "java.library.path", file("src/main/resources/discord_social_sdk/bin/release").absolutePath
 }
 
 tasks.register('shadowJar', Jar) {
