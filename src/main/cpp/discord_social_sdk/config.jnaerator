@@ -1,0 +1,11 @@
+-mode Directory
+-o $(DIR)/jnaerator
+-f  // force overwrite
+-runtime JNA
+-direct
+-library discord_partner_sdk
+-structsInLibrary
+-limitComments
+-noComments
+-limitComments
+$(DIR)/include/cdiscord.h
